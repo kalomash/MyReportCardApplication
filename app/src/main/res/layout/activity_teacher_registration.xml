@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sigroup_input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/sigroup_input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sigroup_input_layout_email"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/sigroup_input_username"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+
+                android:hint="username"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sigroup_input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/sigroup_input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Password"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sigroup_input_layout_passwords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/sigroup_input_passwords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/sigroup_input_layout_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/sigroup_input_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:singleLine="true"
+                android:hint="confirm your password "/>
+        </android.support.design.widget.TextInputLayout>
+        
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="20dp">
+     
+     <TextView
+         android:id="@+id/gender_textview"
+         android:paddingRight="15dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="I am"
+         android:fontFeatureSettings="Password"
+         android:textSize="20dp"
+         android:fontFamily="Password"/>
+     
+     <RadioGroup
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/gender_textview"
+         android:orientation="horizontal">
+
+         <RadioButton
+             android:id="@+id/male_radio_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Male"
+             android:checked="true"/>
+
+         <RadioButton
+             android:id="@+id/female_radio_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Female" />
+
+     </RadioGroup>
+
+ </RelativeLayout>
+     <Button
+         android:onClick="onSingUpClick"
+         android:id="@+id/btn_sigroup"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Sign Up"
+         android:background="@color/colorPrimaryDark"
+         android:layout_marginTop="40dp"
+         android:textColor="@android:color/white"/>
+
+
+
+</LinearLayout>
+</LinearLayout>

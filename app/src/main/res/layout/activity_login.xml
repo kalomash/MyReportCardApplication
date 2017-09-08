@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.myreportcardapplication.LoginActivity">
+
+  <LinearLayout
+      android:paddingTop="100dp"
+      android:layout_width="368dp"
+      android:layout_height="495dp"
+      android:orientation="vertical"
+      tools:layout_editor_absoluteY="8dp"
+      tools:layout_editor_absoluteX="8dp">
+
+
+      <EditText
+          android:layout_width="300dp"
+          android:layout_height="60dp"
+          android:layout_gravity="center"
+          android:hint="Username"/>
+
+      <EditText
+          android:layout_width="300dp"
+          android:layout_height="60dp"
+          android:layout_gravity="center"
+          android:hint="Password"/>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/login_teacher"
+        android:layout_marginTop="50dp"
+        android:layout_width="0dp"
+        android:text="Login Teacher"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/login_student"
+        android:layout_weight="1"
+        android:layout_marginTop="50dp"
+        android:layout_width="0dp"
+        android:text="Login Student"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <Button
+              android:layout_marginTop="50dp"
+              android:layout_width="0dp"
+              android:text="Teacher Sign Up"
+              android:id="@+id/TeacherSign"
+              android:layout_weight="1"
+
+              android:layout_height="wrap_content" />
+
+
+          <Button
+              android:layout_weight="1"
+              android:layout_marginTop="50dp"
+              android:layout_width="0dp"
+              android:text="Student Sign Up"
+              android:id="@+id/StudentSign"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>
